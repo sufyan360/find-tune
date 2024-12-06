@@ -22,7 +22,7 @@ export const searchSongs = async (query) => {
   try {
     // Wait for the access token to be fetched
     const API_TOKEN = await _getToken();
-    console.log('Spotify Access Token:', API_TOKEN);
+    //console.log('Spotify Access Token:', API_TOKEN);
 
     // Make the API request with the correct token
     const response = await axios.get(`${API_URL}/search`, {
